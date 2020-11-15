@@ -1,0 +1,26 @@
+<html>
+<head>
+<script
+  src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"
+  integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+  crossorigin="anonymous"></script>
+
+</head>
+<div class="checkbox">
+    <input id="check" name="checkbox" type="checkbox">
+		$('#check').click(function(){
+
+if($(this).attr('checked') == false){
+     $('#btncheck').attr("disabled","disabled");   
+}
+else
+    $('#btncheck').removeAttr('disabled');
+});
+    <label for="checkbox">
+      Some Text Here
+    </label>
+  </div>
+  <input type="submit" name="anmelden" class="button" id="btncheck" value="Send" />
+</body>
+
+</html>

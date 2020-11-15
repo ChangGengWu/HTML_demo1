@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>LogIn</title>
+ </head>
+ <body>
+  <center>
+  <img src="../img/index封面.png" width="1100px" height="260px" border="0" alt="">
+  <hr>
+  <div style="width:1200px;height:60px;background-color:#ffcc33;border-bottom-right-radius:60px;border-bottom-left-radius:60px;">
+  <font face="微軟正黑體"><font size=6>※&nbsp&nbsp&nbsp選&nbsp課&nbsp操&nbsp作&nbsp步&nbsp驟&nbsp&nbsp&nbsp※</font></font>
+  </div>
+  </div style="width:200px;height:400px;background-color:#cc0033;border-radius:10px;">
+  </div>
+  <div style="margin-top:5px;">
+  <table width=1100px height=300px style="border-radius:60px;">
+	<tr>
+	<td width=525px>
+	<font face="微軟正黑體">
+	<ol type="1" class="list-group">
+		<li class="list-group-item list-group-item-dark"  style="font-size:20px;">該學期第一次登入系統之同學，請先進入「新增學生基本資料」欄位，完成個人基本資料之填寫。</li>
+		<li class="list-group-item list-group-item-light" style="font-size:20px;"><font color="#000000">鍵入選課資料，請利用查詢開課代碼連結功能，查詢欲修讀科目之開課代碼，並確認課程名稱、上課時間、學分數與選別等資料。</font></li>
+		<li class="list-group-item list-group-item-dark" style="font-size:20px;">選課資料確定，輸入「開課代碼」，選別視需要自行修改，資料送出後，及登錄建檔至本系統內。</li>
+		<li class="list-group-item list-group-item-light" style="font-size:20px;"><font color="#000000">學生基本資料與選課資料確認無誤後，及選擇網頁列印或輸出至Word後列印紙本4份。</font></li>
+		<li class="list-group-item list-group-item-dark" style="font-size:20px;">完成資料登錄並送出後，本系統將寄發1組密碼至您提供之Email帳號中，以供查詢、修改資料用。若未收到或已遺忘，請透過本系統重新寄發，或電話29053097本校課務組查詢。</li>
+		<li class="list-group-item list-group-item-light" style="font-size:20px;"><font color="#000000">若以上輸入資料有誤，請以身分證字號與密碼登入，進行系統登錄，進行修正送出後再列印紙本4份。</font></li>
+		<li class="list-group-item list-group-item-dark" style="font-size:18px;"> 請於2018/03/15(四)21：00前，進入系統登錄，輸入資料印出紙本4份，並日間部請於2018/03/15(四)16：00前，進修部請於2018/03/15(四)21：00前至本校開課系所單位、教務處課務組、總務處出納組等單位完成選課、繳費核可行政程序，逾期不予受理。</li>
+		<li class="list-group-item list-group-item-light" style="font-size:20px;"><font color="#000000">建議使用IE瀏覽器確保資料完整顯示。</font></li>
+		<li class="list-group-item list-group-item-dark" style="font-size:20px;"><font >建議將本網站加入信任網站內 (工具 ==> 相容性檢視設定 ==> 新增此網站：
+		輸入 www.crosscourse.fju.edu.tw ==>按下新增按鈕 ==> 按下關閉按鈕)，確保新增課程時資料完整顯示。</li>
+	</font>
+	</ol>
+	</table>
+	</font>
+	</td>
+    </tr>
+  </table>
+  </div>
+  </center>
+  <hr>
+	<center>
+    <div style="width:1200px;height:60px;background-color:#ffcc33;border-top-right-radius:60px;border-top-left-radius:60px;">
+  <font face="微軟正黑體"><font size=6>※&nbsp&nbsp&nbsp選&nbsp擇&nbsp身&nbsp份&nbsp登&nbsp入&nbsp&nbsp&nbsp※</font></font>
+	</div>
+	</center>
+  <hr>
+  <center>
+  <table>
+<tr>
+	<td><!-- Button Student -->
+	<button type="button" class="btn btn-dark"" data-toggle="modal" data-target="#Student"style="width:380px;height:250px;font-size:43px;border-radius:30px">
+	<font face="微軟正黑體"><img src="../img/student.png" width="49" height="51" border="0" alt=""><br>學生登入</font>
+	</button>
+	<div class="modal fade" id="Student" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+			<h5 class="modal-title" id="StuTitle">學生登入系統</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+			<div class="modal-body">
+		<form>
+			<div class="form-group">
+			<label for="UserIDnum"><font face="微軟正黑體">身分證字號</font></label>
+			<input type="text" class="form-control" id="UserIDnum"placeholder="ID Number"maxlength="10">
+			</div>
+			<div class="form-group">
+			<label for="exampleInputPassword1"><font face="微軟正黑體">密碼<font></label>
+			<input type="password" class="form-control" id="UserPassword" placeholder="Password">
+			</div>
+			</div>
+			<center>
+			<input type="button" value="忘記密碼" class="btn btn-warning"style="width:120px;height:40px;font-size:20px;">
+			<hr width=100px>
+			<button type="submit" class="btn btn-primary" style="width:120px;height:40px;font-size:20px;"><font face="微軟正黑體">登入</font></button>
+			<hr width=100px>
+			</center>
+			</div>
+		</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Button Administrator -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Administrator"style="width:380px;height:250px;font-size:43px;border-radius:30px">
+	<font face="微軟正黑體"><img src="../img/admin.png" width="61" height="38" border="0" alt=""><br>管理員登入</font>
+	</button>
+	<div class="modal fade" id="Administrator" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+			<h5 class="modal-title" id="StuTitle">管理員登入系統</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+	  <form action="administrator.html">
+			<div class="form-group">
+			<label for="UserIDnum"><font face="微軟正黑體">身分證字號</font></label>
+			<input type="text" class="form-control" id="administratorIDnum"placeholder="ID Number">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1"><font face="微軟正黑體">密碼</font></label>
+			<input type="password" class="form-control" id="AdministratorPassword" placeholder="Password">
+		</div>
+		</div>
+		<center>
+		<input type="button" value="忘記密碼" class="btn btn-warning"style="width:120px;height:40px;font-size:20px;">
+		<hr width=100px>
+		<button type="submit" class="btn btn-primary" style="width:120px;height:40px;font-size:20px;"><font face="微軟正黑體">登入</font></button>
+		<hr width=100px>
+		</div>
+		</center>
+	</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Button New -->
+	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#New"style="width:380px;height:250px;font-size:43px;border-radius:30px">
+	<font face="微軟正黑體"><img src="../img/add.png" width="74" height="55" border="0" alt=""><br>新增學生基本資料</font>
+	</button>
+	<div class="modal fade" id="New" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+			<h5 class="modal-title" id="New">新增學生基本登入系統</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+		<form action="user.html">
+			<div class="form-group">
+			<label for="UserIDnum"><font face="微軟正黑體">身分證字號</font></label>
+			<input type="text" class="form-control" id="UserIDnum"placeholder="ID Number">
+			</div>
+		<div class="form-group">
+			<label for="UserPassword"><font face="微軟正黑體">密碼</font></label>
+			<input type="password" class="form-control" id="UserPassword" placeholder="Password">
+		</div>
+		</div>
+		<center>
+		<input type="button" value="忘記密碼" class="btn btn-warning"style="width:120px;height:40px;font-size:20px;">
+		<hr width=100px>
+		<button type="submit" class="btn btn-primary" style="width:120px;height:40px;font-size:20px;"><font face="微軟正黑體">登入</font></button>
+		<hr width=100px>
+		</div>
+		</center>
+		</form>
+				</div>
+			</div>
+		</div>
+	</div></td>
+</tr>
+</table>
+</center>
+	<hr>
+	<center>
+    <div style="width:1200px;height:60px;background-color:#ffcc33;border-bottom-right-radius:60px;border-bottom-left-radius:60px;">
+	</div>
+	</center>
+  <center>
+  <footer>
+  <hr>
+  <div style="width:1200px;height:150px;background-color:#ffffff;border-top-right-radius:60px;border-top-left-radius:60px;text-align:center;border-style:solid;border-width:1px;border-color:#000000;padding:50px;">Fu&nbsp;Ju&nbsp;Catholic&nbsp;University</div>
+  </footer>
+  </center>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>
